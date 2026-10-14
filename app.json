@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "VDPro",
+    "slug": "vdpro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#000000",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pocketdev.vdpro",
+      "infoPlist": {
+        "UIBackgroundModes": ["fetch", "processing", "audio"]
+      }
+    },
+    "android": {
+      "package": "com.pocketdev.vdpro",
+      "adaptiveIcon": {
+        "backgroundColor": "#000000",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_DATA_SYNC",
+        "WAKE_LOCK",
+        "POST_NOTIFICATIONS",
+        "READ_MEDIA_VIDEO",
+        "READ_MEDIA_AUDIO",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#00F0FF",
+          "sounds": []
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

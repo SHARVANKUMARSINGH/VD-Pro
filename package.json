@@ -1,0 +1,38 @@
+{
+  "name": "vdpro",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "@expo/vector-icons": "^15.1.1",
+    "expo": "~57.0.28",
+    "expo-background-fetch": "^57.0.21",
+    "expo-file-system": "^57.0.7",
+    "expo-font": "^57.0.4",
+    "expo-notifications": "^57.0.22",
+    "expo-secure-store": "^57.0.4",
+    "expo-status-bar": "~57.0.1",
+    "expo-task-manager": "^57.0.21",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "^5.10.1",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "~19.2.2",
+    "babel-preset-expo": "~57.0.15",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build:preview": "eas build --profile preview --platform all",
+    "build:apk": "eas build --profile preview --platform android",
+    "build:prod": "eas build --profile production --platform all",
+    "deploy:eas": "bash deploy_eas.sh",
+    "upload:github": "bash github_upload.sh"
+  },
+  "private": true
+}
